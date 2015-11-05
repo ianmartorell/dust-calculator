@@ -1,0 +1,36 @@
+<head>
+	<title>Dust Calculator</title>
+</head>
+
+<body>
+	<div class="ui container">
+		<h1 class="ui center aligned header">Dust Calculator</h1>
+		<div class="ui centered grid">
+			<div class="eight wide column">
+				{{> table}}
+			</div>
+		</div>
+	</div>
+</body>
+
+<template name="table">
+	<table class="ui large center aligned definition table">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Normal</th>
+				<th>Golden</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each rarities}}
+			<tr>
+				<td>{{name}}</td>
+				<td unselectable="on" class="selectable normal count">{{normalCount}}</td>
+				<td unselectable="on" class="selectable golden count">{{goldenCount}}</td>
+			</tr>
+		{{/each}}
+		</tbody>
+	</table>
+	<h2 class="ui header">Total dust: {{total}}</h2>
+</template>

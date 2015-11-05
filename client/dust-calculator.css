@@ -1,0 +1,15 @@
+.container {
+	margin-top: 50px
+}
+
+h1 {
+	margin-bottom: 40px !important
+}
+
+.selectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
