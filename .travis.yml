@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t dust-calculator .
+  - docker tag dust-calculator ianmartorell/dust-calculator:latest
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push ianmartorell/dust-calculator:latest
