@@ -5,6 +5,6 @@ services:
 
 script:
   - docker build -t dust-calculator .
-  - docker tag dust-calculator ianmartorell/dust-calculator:latest
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push ianmartorell/dust-calculator:latest
+  - docker tag dust-calculator quay.io/ian/dust-calculator
+  - docker login quay.io -u="$QUAY_USERNAME" -p="$QUAY_PASSWORD"
+  - docker push quay.io/ian/dust-calculator
