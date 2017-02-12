@@ -17,5 +17,5 @@ docker run -d \
 --link mongo:mongo \
 -e ROOT_URL=http://mydomain.com \
 -e MONGO_URL=mongodb://mongo:27017/dust \
-ianmartorell/dust-calculator:latest
+quay.io/ian/dust-calculator
 ```
