@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/ianmartorell/dust-calculator.svg?branch=master)](https://travis-ci.org/ianmartorell/dust-calculator)
+[![Docker Repository on Quay](https://quay.io/repository/ian/dust-calculator/status "Docker Repository on Quay")](https://quay.io/repository/ian/dust-calculator)
 
 For example:
 
